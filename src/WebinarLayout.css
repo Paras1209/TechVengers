@@ -1,0 +1,256 @@
+	/* /* body {
+		font-family: 'Roboto', sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #F9F9F9;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.webinar-header-bar {
+		background-color: #4CAF50;
+		color: #FFFFFF;
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 18px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+
+	.webinar-container {
+		display: flex;
+		flex-grow: 1;
+		margin-top: 50px;
+		padding: 20px;
+		gap: 20px;
+	}
+
+	.webinar-main-video-section {
+		flex-grow: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.webinar-presenter-video {
+		width: 60%;
+		border-radius: 10px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		background-color: #000;
+		height: 350px; 
+	}
+
+	.webinar-participant-carousel {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		overflow-x: auto;
+	}
+
+	.webinar-participant-video {
+		width: 100px;
+		height: 100px;
+		border-radius: 10px;
+		background-color: #333;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+	}
+
+	.webinar-participant-video:hover {
+		transform: scale(1.1);
+	}
+
+	.webinar-chat-panel {
+		width: 300px;
+		background-color: #FFFFFF;
+		border-left: 1px solid #CCCCCC;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		transition: transform 0.3s ease;
+		transform: translateX(0);  
+	}
+
+	.webinar-chat-panel.collapsed {
+		transform: translateX(300px); 
+	}
+
+	.webinar-chat-header {
+		background-color: #4CAF50;
+		color: #FFFFFF;
+		padding: 10px;
+		text-align: center;
+		position: relative;
+	}
+
+	.webinar-chat-toggle {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+	}
+
+	.webinar-chat-messages {
+		flex-grow: 1;
+		padding: 10px;
+		overflow-y: auto;
+	}
+
+	.webinar-chat-message {
+		margin-bottom: 15px;
+	}
+
+	.webinar-chat-message img {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+	.webinar-chat-message-content {
+		display: inline-block;
+		background-color: #F1F1F1;
+		padding: 10px;
+		border-radius: 8px;
+		max-width: 200px;
+	}
+
+	.webinar-chat-message-timestamp {
+		font-size: 12px;
+		color: #777;
+		margin-left: 40px;
+		display: block;
+	}
+
+	.webinar-question-section {
+		padding: 10px;
+		border-top: 1px solid #CCCCCC;
+	}
+
+	.webinar-question-section input {
+		width: calc(100% - 40px);
+		padding: 10px;
+		border: 1px solid #CCCCCC;
+		border-radius: 4px;
+	}
+
+	.webinar-question-section button {
+		background-color: #4CAF50;
+		color: #FFFFFF;
+		border: none;
+		padding: 10px;
+		margin-left: 10px;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.webinar-question-section button:hover {
+		background-color: #388E3C;
+	}
+
+	.webinar-control-bar {
+		background-color: #FFFFFF;
+		box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+
+	.webinar-control-bar .material-icons {
+		font-size: 28px;
+		color: #4CAF50;
+		cursor: pointer;
+		transition: color 0.3s ease;
+	}
+
+	.webinar-control-bar .material-icons:hover {
+		color: #388E3C;
+	}
+
+	.webinar-participant-list {
+		width: 250px;
+		background-color: #FFFFFF;
+		border-right: 1px solid #CCCCCC;
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		position: fixed;
+		left: 0;
+		top: 50px;
+		bottom: 50px;
+		overflow-y: auto;
+	}
+
+	.webinar-participant-list h3 {
+		font-size: 18px;
+		color: #333333;
+		margin-bottom: 10px;
+	}
+
+	.webinar-participant-list-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.webinar-participant-list-item img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		margin-right: 10px;
+	}
+
+	.webinar-participant-list-item p {
+		font-size: 14px;
+		color: #555555;
+	}
+
+	.webinar-presentation-mode .webinar-presenter-video {
+		width: 150px;
+		height: 100px;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 1000;
+	}
+
+	.webinar-presentation-mode .webinar-main-video-section {
+		background-color: #FFFFFF;
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	@media (max-width: 768px) {
+		.webinar-chat-panel {
+				width: 100%;
+				position: fixed;
+				bottom: 50px;
+				height: 50%;
+				transform: translateY(100%);
+		}
+
+		.webinar-chat-panel.collapsed {
+				transform: translateY(0);
+		}
+
+		.webinar-participant-list {
+				width: 200px;
+		}
+
+		.webinar-main-video-section {
+				flex-grow: 1;
+		}
+	}
+ */

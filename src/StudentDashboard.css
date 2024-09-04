@@ -1,0 +1,284 @@
+ /* Global Styles */
+body {
+		font-family: 'Work Sans', sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #E8F5E9;
+}
+
+h2, p {
+		margin: 0;
+}
+
+a {
+		color: #4CAF50;
+		text-decoration: none;
+}
+
+a:hover {
+		color: #388E3C;
+}
+
+/* Navbar */
+.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #FFFFFF;
+		padding: 10px 20px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		z-index: 1;
+		position: relative;
+}
+
+.navbar .logo {
+		font-family: 'Roboto', sans-serif;
+		font-size: 24px;
+		font-weight: bold;
+		color: #4CAF50;
+}
+
+.navbar .navbar-right {
+		display: flex;
+		align-items: center;
+}
+
+.navbar-right .material-icons {
+		font-size: 24px;
+		color: #4CAF50;
+		margin-left: 20px;
+}
+
+.profile-picture img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+}
+
+/* Side Panel */
+.side-panel {
+		width: 80px;
+		height: 100vh;
+		background-color: #FFFFFF;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 20px;
+		box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+		transition: width 0.3s ease;
+		overflow: hidden;
+}
+
+.side-panel.expanded {
+		width: 200px;
+}
+
+.icon-tooltip {
+		margin: 20px 0;
+		text-align: center;
+		position: relative;
+		width: 100%;
+		transition: all 0.3s ease;
+}
+
+.icon-tooltip .material-icons {
+		font-size: 30px;
+		color: #4CAF50;
+}
+
+.tooltip-text {
+		display: inline-block;
+		position: absolute;
+		left: 60px;
+		opacity: 0;
+		white-space: nowrap;
+}
+
+.side-panel.expanded .tooltip-text {
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+/* Main Content Area */
+.content-area {
+	margin-left: 80px;
+	padding: 20px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 16px;
+}
+
+.card h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.card ul {
+	list-style: none;
+	padding: 0;
+}
+
+.card ul li {
+	margin-bottom: 10px;
+}
+
+.card .calendar-view {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.card button {
+	background-color: #4CAF50;
+	color: #FFFFFF;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+
+.card button:hover {
+	background-color: #388E3C;
+}
+
+.alumni-spotlight .carousel {
+	display: flex;
+	overflow: hidden;
+	height: 150px;
+}
+
+.alumni-spotlight .carousel-item {
+	margin-right: 20px;
+	text-align: center;
+}
+
+.alumni-spotlight img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+	background-color: #FFFFFF;
+	padding: 10px 20px;
+	text-align: center;
+	box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	bottom: 0;
+	width: calc(100% - 80px);
+}
+
+.footer a {
+	margin: 0 10px;
+}
+
+/* AI Chatbot */
+.chatbot-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #4CAF50;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 24px;
+	cursor: pointer;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	animation: pulse 1s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.side-panel {
+			width: 100%;
+			height: auto;
+			position: static;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+	}
+
+	.side-panel .icon-tooltip {
+			display: none;
+	}
+
+	.navbar {
+			flex-direction: column;
+			align-items: flex-start;
+	}
+
+	.navbar-center {
+			display: none;
+	}
+
+	.content-area {
+			margin-left: 0;
+	}
+
+	.grid-container {
+			grid-template-columns: 1fr;
+	}
+}
+
+/* Animations */
+@keyframes pulse {
+	0% {
+			transform: scale(1);
+	}
+	50% {
+			transform: scale(1.1);
+	}
+	100% {
+			transform: scale(1);
+	}
+}
+
+/* Notification Bounce */
+.bounce {
+	animation: bounce 1.5s;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+			transform: translateY(0);
+	}
+	40% {
+			transform: translateY(-30px);
+	}
+	60% {
+			transform: translateY(-15px);
+	}
+}
+
+ */
