@@ -217,7 +217,8 @@ import {
   faVideo,
   faBriefcase,
   faSchool,
-  faLocationArrow, // Added import
+  faLocationArrow,
+  faPager, // Added import
 } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 import RatingComponent from "./Ratingcomponents";
@@ -298,7 +299,7 @@ const StudentDashboard = () => {
             navigate("/forum");
           }}
         >
-          <FontAwesomeIcon icon={faCalendar} />
+          <FontAwesomeIcon icon={faPager} />
           <span className="tooltip-text">Forums</span>
         </div>
         <div
@@ -310,8 +311,10 @@ const StudentDashboard = () => {
           <FontAwesomeIcon icon={faVideo} />
           <span className="tooltip-text">Webinar</span>
         </div>
-        <div className="icon-tooltip">
-          <FontAwesomeIcon icon={faCalendar} />
+        <div className="icon-tooltip" onClick={() => {
+            navigate("/search");
+          }} >
+          <FontAwesomeIcon icon={faSearch} />
           <span className="tooltip-text">Search</span>
         </div>
         <div className="icon-tooltip">

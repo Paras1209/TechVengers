@@ -8,6 +8,9 @@ import ForumPage from "./ForumPage.jsx";
 import WebinarLayout from "./WebinarLayout.jsx"
 import ChatLayout from "./ChatLayout.jsx";
 import EventsPage from "./EventsPage.jsx";
+import AlumniSearch from "./SearchAlumni.jsx";
+import DashSideNav from "./DashSideNav.jsx"
+
 
 export default function App() {
   return (
@@ -21,6 +24,8 @@ export default function App() {
         <Route path="/chat" element={<ChatLayout />} />
         <Route path="/webinar" element={<WebinarLayout />} />
         <Route path="/events" element={<EventsPage />} />
+        <Route path="/search" element={<AlumniSearch />} />
+        <Route path="/sidedash" element={<DashSideNav />} />
 
           {/* <Route path="" element={} /> */}
             {/* // <Route path="" element={} /> */}
