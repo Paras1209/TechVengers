@@ -1,5 +1,6 @@
 import React from 'react';
 import './WebinarLayout.css'; // Import the CSS file
+import DashSideNav from './DashSideNav';
 
 const WebinarLayout = () => {
 	return (
@@ -9,17 +10,20 @@ const WebinarLayout = () => {
 				Webinar Title - Time Remaining: 45 mins
 			</div>
 
+			{/* side nav bar */}
+			<DashSideNav />
+
 			<div className="webinar-container">
 				{/* Participant List */}
 				<div className="webinar-participant-list">
 					<h3>Participants</h3>
 					<div className="webinar-participant-list-item">
 						<img src="https://via.placeholder.com/40" alt="Participant" />
-						<p>John Doe (Muted)</p>
+						<p>Rohan (Muted)</p>
 					</div>
 					<div className="webinar-participant-list-item">
 						<img src="https://via.placeholder.com/40" alt="Participant" />
-						<p>Jane Smith (Speaking)</p>
+						<p>Krishna (Speaking)</p>
 					</div>
 					{/* Add more participants as needed */}
 				</div>

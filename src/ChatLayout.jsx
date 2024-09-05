@@ -88,7 +88,7 @@ export default function ChatLayout() {
 				<div className="header">
 					<div className="profile-info">
 						<img src="profile2.jpg" alt="Chat Partner" />
-						<span className="name">Jane Smith</span>
+						<span className="name">Rohan</span>
 					</div>
 					<div className="call-icons">
 						<span className="material-icons">videocam</span>

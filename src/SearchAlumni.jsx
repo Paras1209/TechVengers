@@ -1,17 +1,23 @@
 // AlumniSearch.jsx
 import React from 'react';
 import styles from './AlumniSearch.module.css';
+import DashSideNav from './DashSideNav';
+import DashHeader from './DashHeader';
 
 export default function AlumniSearch() {
 		return (
 				<div className={styles.alumniSearch}>
 						{/* Top Navigation Bar */}
-						<div className={styles.navbar}>
+						{/* <div className={styles.navbar}>
 								<a href="#">Dashboard</a>
 								<a href="#">Forum</a>
 								<a href="#">Alumni Search</a>
 								<a href="#">Profile</a>
-						</div>
+						</div> */}
+					<DashHeader />
+
+					{/* side nav bar */}
+					<DashSideNav />
 
 						{/* Search Bar */}
 						<div className={styles.searchBar}>
@@ -62,7 +68,7 @@ export default function AlumniSearch() {
 								<div className={styles.alumniListItem}>
 										<img src="https://via.placeholder.com/60" alt="Alumni Photo" />
 										<div className={styles.alumniInfo}>
-												<h3>John Doe</h3>
+												<h3>Sohan Choudhary</h3>
 												<p>AI Expert | Alumni of College 1</p>
 										</div>
 										<div className={styles.alumniActions}>
@@ -73,7 +79,7 @@ export default function AlumniSearch() {
 								<div className={styles.alumniListItem}>
 										<img src="https://via.placeholder.com/60" alt="Alumni Photo" />
 										<div className={styles.alumniInfo}>
-												<h3>Jane Smith</h3>
+												<h3>Ronak Mathur</h3>
 												<p>Web Developer | Alumni of College 2</p>
 										</div>
 										<div className={styles.alumniActions}>
@@ -84,7 +90,7 @@ export default function AlumniSearch() {
 								<div className={styles.alumniListItem}>
 										<img src="https://via.placeholder.com/60" alt="Alumni Photo" />
 										<div className={styles.alumniInfo}>
-												<h3>Michael Johnson</h3>
+												<h3>Anu Sharma</h3>
 												<p>Mechanical Engineer | Alumni of College 3</p>
 										</div>
 										<div className={styles.alumniActions}>

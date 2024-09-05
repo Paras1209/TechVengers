@@ -127,10 +127,10 @@ const StudentDashboard = () => {
                 <h3>Registered Events</h3>
                 <ul>
                   <li>
-                    <strong>Tech Talk with Dr. Smith</strong>
+                    <strong>Tech Talk with Dr. Sharma</strong>
                     <p>
                       <FontAwesomeIcon icon={faCalendar} /> October 15, 2024 |{" "}
-                      <FontAwesomeIcon icon={faLocationArrow} /> Room 101
+                      {/* <FontAwesomeIcon icon={faLocationArrow} /> */}
                     </p>
                     <p>Learn about the latest trends in AI.</p>
                   </li>
@@ -138,7 +138,7 @@ const StudentDashboard = () => {
                     <strong>Alumni Networking Meet</strong>
                     <p>
                       <FontAwesomeIcon icon={faCalendar} /> November 5, 2024 |{" "}
-                      <FontAwesomeIcon icon={faLocationArrow} /> Main Hall
+                      {/* <FontAwesomeIcon icon={faLocationArrow} /> Main Hall */}
                     </p>
                     <p>Connect with alumni from various industries.</p>
                   </li>
@@ -166,7 +166,7 @@ const StudentDashboard = () => {
                   <p>
                     <strong>October 2024</strong>
                   </p>
-                  <p>15: Tech Talk with Dr. Smith</p>
+                  <p>15: Tech Talk with Dr. Sharma </p>
                   <p>25: Alumni Networking Meet</p>
                 </div>
               </div>
@@ -201,14 +201,14 @@ const StudentDashboard = () => {
                 <div className="carousel-item">
                   <img src="https://via.placeholder.com/150" alt="Alumni" />
                   <p>
-                    <strong>Jane Doe</strong>: <br /> Leading AI Research at XYZ
+                    <strong>Nitin Yadav</strong>: <br /> Leading AI Research at XYZ
                     Corp
                   </p>
                 </div>
                 <div className="carousel-item">
                   <img src="https://via.placeholder.com/150" alt="Alumni" />
                   <p>
-                    <strong>John Smith</strong>: <br /> CTO at ABC Ltd.
+                    <strong>Pushpit</strong>: <br /> CTO at ABC Ltd.
                   </p>
                 </div>
               </div>
@@ -217,11 +217,11 @@ const StudentDashboard = () => {
               <h3>Followed Alumni Updates</h3>
               <ul>
                 <li>
-                  <strong>Jane Doe</strong> shared an article on AI
+                  <strong>Paras</strong> shared an article on AI
                   advancements.
                 </li>
                 <li>
-                  <strong>John Smith</strong> posted about a new tech startup.
+                  <strong>Manish</strong> posted about a new tech startup.
                 </li>
               </ul>
             </div>

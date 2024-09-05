@@ -36,7 +36,17 @@ export default function LandingPage() {
             <div className="hero-content-h1">
               <h1 data-aos="fade">Welcome to</h1>
               <h1 data-aos="fade">GyaanSetu</h1>
+            
+            
             </div>
+
+            <div className="center-content"> 
+              <h6>Building Connections, Creating Futures</h6>
+             <h6> Connecting alumni and students for lifelong learning, mentorship, and success.</h6>
+
+
+            </div>
+            
             <div className="cta-buttons" data-aos="zoom-out-up">
               <button
                 onClick={() => {
@@ -72,7 +82,7 @@ export default function LandingPage() {
 
         {/* key features */}
         <section className="features">
-          <h2 data-aos="fade-down">Key Features of Scholar Connect</h2>
+          <h2 data-aos="fade-down">Key Features of GyaanSetu</h2>
           <div className="features-grid"></div>
         </section>
 
@@ -80,7 +90,7 @@ export default function LandingPage() {
         <section className="success-stories">
           <h1 data-aos="slide-up">Our Impact in Numbers</h1>
           <p data-aos="slide-up">
-            Discover how Scholar Connect has transformed the educational journey
+            Discover how GyaanSetu has transformed the educational journey
             for thousands.
           </p>
           <section className="stats">
@@ -122,9 +132,11 @@ export default function LandingPage() {
           <h2 data-aos="fade-up">Success Stories</h2>
           <div className="story">
             {[
-              "Scholar Connect helped me find the right mentor to guide me through my career path!",
-              "Scholar Connect helped me find the right mentor to guide me through my career path!",
-              "Scholar Connect helped me find the right mentor to guide me through my career path!",
+              "GyaanSetu helped me find the right mentor to guide me through my career path!",
+
+              "Through this platform, I connected with an alumni mentor who guided me in securing my first job as a software engineer!",
+      
+             "The career guidance sessions helped me focus on the right path, and now I'm working at a top IT firm thanks to the connections I made.",
               "The resources available on this platform made a huge difference in my academic success.",
             ].map((story, index) => (
               <div className="story-card" key={index} data-aos="fade">
@@ -139,7 +151,7 @@ export default function LandingPage() {
         {/* scholar conect */}
         <section>
           <div className="scholar">
-            <h1 data-aos="zoom-out">Join Scholar Connect Today</h1>
+            <h1 data-aos="zoom-out">Join GyaanSetu Today</h1>
             <p data-aos="zoom-out">
               Become a part of our thriving educational journey. Sign up now to
               unlock all features.
@@ -161,7 +173,7 @@ export default function LandingPage() {
         <section className="#contact">
           <div className="contact-section">
             <div className="contact-content">
-              <h3>Get in Touch with Scholar Connect</h3>
+              <h3>Get in Touch with GyaanSetu</h3>
               <h1>Have Questions? We're Here to Help!</h1>
               <p className="timing">
                 Monday–Friday, 9:00 am to 6:00 pm <br />
@@ -172,7 +184,7 @@ export default function LandingPage() {
               <div className="contact-message">
                 <h4>Send Us a Message</h4>
                 <a href="mailto:connect@scholarconnect.com">
-                  connect@scholarconnect.com
+                  connect@gyaansetu.com
                 </a>
               </div>
               <div className="social-links">
@@ -206,24 +218,24 @@ export default function LandingPage() {
             </div>
           </section>
 
-          <hr className="solid" />
+          {/* <hr className="solid" /> */}
 
           <section>
             <div className="footer-text">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 distinctio earum repellat quaerat voluptatibus placeat nam,
                 commodi optio pariatur est quia magnam eum harum corrupti dicta,
-                aliquam sequi voluptate quas.
+                aliquam sequi voluptate quas. */}
               </p>
             </div>
           </section>
 
-          <hr className="solid" />
+          {/* <hr className="solid" /> */}
 
           <section>
             <div className="copyright">
-              <p>&copy; 2023 TechVengers. All rights reserved.</p>
+              <p>&copy; 2024 TechVengers. All rights reserved.</p>
             </div>
           </section>
         </footer>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './EventsPage.css'; // Ensure this CSS file is correctly linked
+import DashSideNav from './DashSideNav';
 
 const EventsPage = () => {
 	// State management for modal and summary text
@@ -53,6 +54,8 @@ const EventsPage = () => {
 				</ul>
 			</nav>
 
+			{/* side nav bar */}
+			<DashSideNav />
 			{/* Filter Section */}
 			<section className="filter-section">
 				<div className="filter-container">
