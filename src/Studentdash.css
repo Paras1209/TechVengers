@@ -20,7 +20,7 @@ a:hover {
   color: #388e3c;
 }
 .showpr {
-  background-color: burlywood;
+  background-color: lightblue;
   height: 400px;
   width: 300px;
   right: 0;
@@ -58,7 +58,7 @@ a:hover {
   position: fixed;
 }
 .showChatBot {
-  background-color: burlywood;
+  background-color: lightblue;
   height: 400px;
   width: 300px;
   right: 0;
@@ -352,7 +352,7 @@ main .grid-container .hori-grid {
   display: flex;
   align-items: center;
   overflow: hidden;
-  height: 200px;
+  height: 250px;
 }
 
 .alumni-spotlight .carousel-item {

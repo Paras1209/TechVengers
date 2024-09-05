@@ -17,10 +17,16 @@ import RatingComponent from "./Ratingcomponents";
 import gl from "./Gyan Setu Logo.svg";
 import { Link } from "react-router-dom";
 import DashHeader from "./DashHeader";
-import DashSideNav from "./DashSideNav.jsx"
-
+import DashSideNav from "./DashSideNav.jsx";
 
 const StudentDashboard = () => {
+  const [text, settext] = useState("");
+  const [open, setopen] = useState(false);
+
+  const handleemojiclick = (e) => {
+    settext((prev) => prev + e.emoji);
+    setopen(false);
+  };
   const [show, setshow] = useState(false);
   const [showprofile, setshowprofile] = useState(false);
   const profileRef = useRef(null);
@@ -75,7 +81,7 @@ const StudentDashboard = () => {
           )}
         </div>
       </header> */}
-  <DashHeader />
+      <DashHeader />
       {/* <aside
         className={`side-panel ${isExpanded ? "expanded" : ""}`}
         onMouseEnter={handleMouseEnter}
@@ -201,8 +207,8 @@ const StudentDashboard = () => {
                 <div className="carousel-item">
                   <img src="https://via.placeholder.com/150" alt="Alumni" />
                   <p>
-                    <strong>Nitin Yadav</strong>: <br /> Leading AI Research at XYZ
-                    Corp
+                    <strong>Nitin Yadav</strong>: <br /> Leading AI Research at
+                    XYZ Corp
                   </p>
                 </div>
                 <div className="carousel-item">
@@ -217,8 +223,7 @@ const StudentDashboard = () => {
               <h3>Followed Alumni Updates</h3>
               <ul>
                 <li>
-                  <strong>Paras</strong> shared an article on AI
-                  advancements.
+                  <strong>Paras</strong> shared an article on AI advancements.
                 </li>
                 <li>
                   <strong>Manish</strong> posted about a new tech startup.
@@ -245,7 +250,45 @@ const StudentDashboard = () => {
           ref={profileRef2}
           className="showChatBot
 			"
-        ></div>
+        >
+          <div className="center">
+            <div className="message">
+              <div className="texts">
+                <p>How can I assist you today?</p>
+              </div>
+            </div>
+            <div className="message own">
+              <div className="texts">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Excepturi nam facere aliquam velit qui architecto recusandae
+                  dolores tenetur dolorem! Expedita cum vero optio asperiores ex
+                  odit facilis sint voluptates soluta?
+                </p>
+                <span className="time">1 min ago</span>
+              </div>
+            </div>
+          </div>
+          <div className="chatbot-bottom">
+            <input
+              value={text}
+              onChange={(e) => settext(e.target.value)}
+              className="textinput"
+              placeholder="Type a message"
+            />
+            <div className="emoji">
+              <img
+                className="emojiimg"
+                src="happy.png"
+                onClick={() => setopen((prev) => !prev)}
+              />
+              <img className="emojiimg" src="send (1).png" />
+              <div className="picker">
+                {/* <EmojiPicker open={open} onEmojiClick={handleemojiclick} /> */}
+              </div>
+            </div>
+          </div>
+        </div>
       ) : (
         ""
       )}
