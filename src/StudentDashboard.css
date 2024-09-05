@@ -6,6 +6,59 @@ body {
   background-color: #e8f5e9;
 }
 
+.chatbot-button {
+  right: 0;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  float: right;
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: pulse 1s infinite;
+  position: fixed;
+}
+
+.showChatBot {
+  background-color: burlywood;
+  height: 400px;
+  width: 300px;
+  right: 0;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  position: fixed;
+}
+.showpr {
+  background-color: burlywood;
+  height: 400px;
+  width: 300px;
+  right: 0;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  display: flex;
+  position: absolute;
+  top: 90px;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+  padding-top: 15px;
+}
+
 h2,
 p {
   margin: 0;
@@ -19,47 +72,52 @@ a {
 a:hover {
   color: #388e3c;
 }
+.bg {
+  background-color: #cff0d8;
+}
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
   position: relative;
 }
 
-.navbar .logo {
+.logo {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #4caf50;
 }
 
-.navbar .navbar-right {
+.navbar-center {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.navbar-right .material-icons {
+.fa-icon {
   font-size: 24px;
   color: #4caf50;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .profile-picture img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin: 0 10px;
 }
 
 .side-panel {
   width: 80px;
   height: 100vh;
   background-color: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   display: flex;
@@ -69,6 +127,7 @@ a:hover {
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   transition: width 0.3s ease;
   overflow: hidden;
+  top: 50px;
 }
 
 .side-panel.expanded {
@@ -76,31 +135,39 @@ a:hover {
 }
 
 .icon-tooltip {
-  margin: 20px 0;
+  display: inline-block;
+  margin: 20px 10px;
   text-align: center;
   position: relative;
   width: 100%;
   transition: all 0.3s ease;
 }
 
-.icon-tooltip .material-icons {
+.icon-tooltip svg {
   font-size: 30px;
   color: #4caf50;
+  margin-right: 10px;
 }
 
 .tooltip-text {
-  display: inline-block;
-  position: absolute;
-  left: 60px;
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
   opacity: 0;
   white-space: nowrap;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+.icon-tooltip:hover .tooltip-text {
+  display: inline-block;
+  text-align: center;
+  opacity: 1;
 }
 
 .side-panel.expanded .tooltip-text {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
 }
-
 /* Main Content Area */
 .content-area {
   margin-left: 80px;
@@ -111,24 +178,69 @@ a:hover {
   align-items: center;
 }
 
+.event-horizontal {
+  display: flex;
+  /* background-color: #FFFFFF;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px; */
+  /* margin-bottom: 10px; */
+  height: fit-content;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 3fr 2fr;
   gap: 16px;
   width: 100%;
 }
-
-.column {
+.rewap {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 
+main .grid-container .hori-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
 .card {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 16px;
+}
+
+.card1 {
+  margin: 0 auto;
+  padding: 10px;
+}
+.card2 {
+  height: 35vh;
+  width: 30vw;
+  margin-right: auto;
+}
+.card2A {
+  width: 65vh;
+}
+
+.card4 {
+  margin-right: 15px;
+  width: 30vw;
+}
+
+.svg-cont {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.svg {
+  width: 100px; /* Set the width of the SVG */
+  transform: scale(2);
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 50px;
 }
 
 .card h3 {
@@ -156,10 +268,11 @@ a:hover {
   background-color: #4caf50;
   color: #ffffff;
   border: none;
-  padding: 8px 16px;
+  padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  margin-left: 10px;
 }
 
 .card button:hover {
@@ -168,8 +281,9 @@ a:hover {
 
 .alumni-spotlight .carousel {
   display: flex;
+  align-items: center;
   overflow: hidden;
-  height: 150px;
+  height: 250px;
 }
 
 .alumni-spotlight .carousel-item {
