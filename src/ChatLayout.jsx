@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./ChatLayout.css";
 
-const ChatLayout = () => {
+export default function ChatLayout() {
 	const [message, setMessage] = useState("");
 	const [messages, setMessages] = useState([
 		{ id: 1, text: "Hey, how are you?", type: "received" },
@@ -141,6 +141,4 @@ const ChatLayout = () => {
 			</div>
 		</div>
 	);
-};
-
-export default ChatLayout;
+}
