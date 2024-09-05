@@ -1,17 +1,23 @@
 // ForumPage.jsx
 import React from 'react';
 import styles from './ForumPage.module.css';
+import DashHeader from "./DashHeader";
+import DashSideNav from "./DashSideNav.jsx"
 
 
 const ForumPage = () => {
 	return (
-		<div>
-			<div className={styles.navbar}>
+		<>
+			<DashHeader />
+			<DashSideNav />
+		<div className={styles.forum}>
+			{/* <div className={styles.navbar}>
 				<a href="#" className={styles.navLink}>Dashboard</a>
 				<a href="#" className={styles.navLink}>Forum</a>
 				<a href="#" className={styles.navLink}>Profile</a>
 			</div>
-
+ */}
+			{/* <div className={styles.contentWrapper}> */}
 			<div className={styles.searchBar}>
 				<input type="text" placeholder="Search discussions..." className={styles.searchInput} />
 			</div>
@@ -62,6 +68,7 @@ const ForumPage = () => {
 				</div>
 			</div>
 		</div>
+		</>
 	);
 };
 

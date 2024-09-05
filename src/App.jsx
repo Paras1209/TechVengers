@@ -10,6 +10,8 @@ import ChatLayout from "./ChatLayout.jsx";
 import EventsPage from "./EventsPage.jsx";
 import AlumniSearch from "./SearchAlumni.jsx";
 import DashSideNav from "./DashSideNav.jsx"
+import DashHeader from "./DashHeader.jsx"
+
 
 
 export default function App() {
@@ -27,9 +29,9 @@ export default function App() {
         <Route path="/search" element={<AlumniSearch />} />
         <Route path="/sidedash" element={<DashSideNav />} />
 
-          {/* <Route path="" element={} /> */}
+          <Route path="/header" element={<DashHeader />} />
             {/* // <Route path="" element={} /> */}
       </Routes>
     </BrowserRouter>
   );
-}
+};

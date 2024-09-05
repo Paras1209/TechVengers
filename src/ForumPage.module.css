@@ -7,7 +7,7 @@ body {
 		padding: 0;
 }
 
-.navbar {
+/* .navbar {
 		background-color: #FFFFFF;
 		padding: 10px 20px;
 		display: flex;
@@ -22,10 +22,16 @@ body {
 		margin: 0 15px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: bold;
-}
+} */
 
+.forum{
+	height:100vh;
+	width:100vw;
+	/* margin-left:5rem; */
+}
 .searchBar {
 		margin: 20px;
+	margin-left:5.5rem;
 }
 
 .searchInput {
@@ -131,6 +137,7 @@ body {
 
 .contentWrapper {
 		display: flex;
+	margin-left:5.5rem;
 }
 
 @media (max-width: 768px) {

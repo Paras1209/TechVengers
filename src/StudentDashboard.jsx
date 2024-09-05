@@ -16,6 +16,9 @@ import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 import RatingComponent from "./Ratingcomponents";
 import gl from "./Gyan Setu Logo.svg";
 import { Link } from "react-router-dom";
+import DashHeader from "./DashHeader";
+import DashSideNav from "./DashSideNav.jsx"
+
 
 const StudentDashboard = () => {
   const [show, setshow] = useState(false);
@@ -35,14 +38,14 @@ const StudentDashboard = () => {
   return (
     <div className="bg">
       {/* Top Navbar */}
-      <header className="navbar">
+      {/* <header className="navbar">
         <div className="svg-cont">
           <img src={gl} alt="SVG" className="svg" />
         </div>
         <div className="navbar-center flex justify-center items-center">
           <FontAwesomeIcon icon={faSearch} className="fa-icon" />
           <FontAwesomeIcon icon={faBell} className="fa-icon" />
-          {/* <FontAwesomeIcon icon={faCommentDots} className="fa-icon" /> */}
+          {/* <FontAwesomeIcon icon={faCommentDots} className="fa-icon" /> }
           <div
             className="profile-picture "
             onClick={() => setshowprofile((prev) => !prev)}
@@ -71,9 +74,9 @@ const StudentDashboard = () => {
             ""
           )}
         </div>
-      </header>
-
-      <aside
+      </header> */}
+  <DashHeader />
+      {/* <aside
         className={`side-panel ${isExpanded ? "expanded" : ""}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -83,28 +86,36 @@ const StudentDashboard = () => {
           <span className="tooltip-text">Chat</span>
 
         </Link>
+        
         <Link to="/forum" className="icon-tooltip">
-          <FontAwesomeIcon icon={faCalendar} />
+          <FontAwesomeIcon icon={faPager} />
           <span className="tooltip-text">Forums</span>
         </Link>
+        
         <Link to="webinar" className="icon-tooltip">
           <FontAwesomeIcon icon={faVideo} />
 
-          <span className="tooltip-text">Video Call</span>
+          <span className="tooltip-text">Webinar</span>
         </Link>
+        
         <Link to="/events" className="icon-tooltip">
           <FontAwesomeIcon icon={faCalendar} />
           <span className="tooltip-text">Events</span>
         </Link>
-        <Link to="/career" className="icon-tooltip">
-          <FontAwesomeIcon icon={faBriefcase} />
-          <span className="tooltip-text">Career Guidance</span>
+        
+        <Link to="/search" className="icon-tooltip">
+          <FontAwesomeIcon icon={faSearch} />
+          <span className="tooltip-text">Search</span>
         </Link>
+        
         <Link className="icon-tooltip">
           <FontAwesomeIcon icon={faSchool} />
           <span className="tooltip-text">Mentorship</span>
         </Link>
-      </aside>
+        
+      </aside> */}
+
+      <DashSideNav />
 
       {/* Main Content Area */}
       <main className="content-area">

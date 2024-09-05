@@ -51,6 +51,7 @@ const LoginRegisterForm = () => {
                 type="submit"
                 className="btn animation"
                 style={{ "--i": 3, "--j": 24 }}
+                onClick={()=>(navigate('/dashboard'))}
               >
                 Login
               </button>

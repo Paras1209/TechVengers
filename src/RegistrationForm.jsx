@@ -140,7 +140,8 @@ const RegistrationForm = () => {
                 </div>
               </div>
             </div>
-            <button type="submit" className="submit-btn">
+            <button type="submit" className="submit-btn"                 onClick={()=>(navigate('/dashboard'))}
+ >
               Submit
             </button>
           </form>

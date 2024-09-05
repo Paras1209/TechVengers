@@ -1,6 +1,9 @@
 // ChatLayout.jsx
 import React, { useState } from "react";
 import "./ChatLayout.css";
+import DashHeader from "./DashHeader";
+import DashSideNav from "./DashSideNav.jsx"
+
 
 export default function ChatLayout() {
 	const [message, setMessage] = useState("");
@@ -37,13 +40,16 @@ export default function ChatLayout() {
 	};
 
 	return (
+		<>
+			<DashHeader />
 		<div className="chat-container">
+			{/* <DashHeader /> */}
 			{/* Left Sidebar */}
 			<div className="left-sidebar">
 				<div className="profile-section">
 					<img src="profile.jpg" alt="User Profile" />
 					<div>
-						<p>John Doe</p>
+						<p>Paras</p>
 						<p style={{ fontSize: "12px", color: "#888888" }}>
 							Available for chat
 						</p>
@@ -60,7 +66,7 @@ export default function ChatLayout() {
 					<div className="message">
 						<img src="profile1.jpg" alt="Chat Partner" />
 						<div className="message-info">
-							<span className="name">Jane Smith</span>
+							<span className="name">Pushpit</span>
 							<span className="preview">Hey, how are you?</span>
 						</div>
 						<div className="notification-count">2</div>
@@ -68,14 +74,14 @@ export default function ChatLayout() {
 					<div className="message">
 						<img src="profile2.jpg" alt="Chat Partner" />
 						<div className="message-info">
-							<span className="name">Mark Lee</span>
+							<span className="name">TechVengers</span>
 							<span className="preview">See you soon!</span>
 						</div>
 						<div className="notification-count">1</div>
 					</div>
 				</div>
 			</div>
-
+<DashSideNav />
 			{/* Right Section */}
 			<div className="right-section">
 				{/* Header */}
@@ -90,6 +96,7 @@ export default function ChatLayout() {
 					</div>
 				</div>
 
+				{/* <DashHeader /> */}
 				{/* Message Area */}
 				<div className="message-area" id="messageArea">
 					{messages.map((msg) => (
@@ -140,5 +147,6 @@ export default function ChatLayout() {
 				</div>
 			</div>
 		</div>
+			</>
 	);
 }

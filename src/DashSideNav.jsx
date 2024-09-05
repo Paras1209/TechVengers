@@ -11,12 +11,14 @@ import {
 	faBriefcase,
 	faSchool,
 	faLocationArrow,
-	faPager, // Added import
+	faPager,
+	faVideoCamera,
+	faHouse// Added import
 } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 import RatingComponent from "./Ratingcomponents";
 
-const DashSideNav = () => {
+export default function DashSideNav() {
 	// const [show, setshow] = useState(false);
 	// const [showprofile, setshowprofile] = useState(false);
 	// const profileRef = useRef(null);
@@ -43,12 +45,27 @@ const DashSideNav = () => {
 				<div
 					className="icon-tooltip"
 					onClick={() => {
+						navigate("/dashboard");
+					}}
+				>
+					<FontAwesomeIcon icon={faHouse} />
+					<span className="tooltip-text">Home</span>
+				</div>
+				<div
+					className="icon-tooltip"
+					onClick={() => {
 						navigate("/chat");
 					}}
 				>
 					<FontAwesomeIcon icon={faCommentDots} />
 					<span className="tooltip-text">Chat</span>
 				</div>
+
+				<div className="icon-tooltip" onClick={()=>{navigate('/events')}}>
+					<FontAwesomeIcon icon={faCalendar} />
+					<span className="tooltip-text">Events</span>
+				</div>
+				
 				<div
 					className="icon-tooltip"
 					onClick={() => {
@@ -78,15 +95,12 @@ const DashSideNav = () => {
 				</div>
 				<div className="icon-tooltip">
 					<FontAwesomeIcon icon={faBriefcase} />
-					<span className="tooltip-text">Career Guidance</span>
+					<span className="tooltip-text">Job</span>
 				</div>
-				<div className="icon-tooltip">
-					<FontAwesomeIcon icon={faSchool} />
-					<span className="tooltip-text">Mentorship</span>
-				</div>
+				
 			</aside>
 		</>
 	);
-};
+}
 
-export default DashSideNav;
+// export default DashSideNav;
