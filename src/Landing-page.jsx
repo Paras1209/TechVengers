@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Landing-page.css";
 import { Link, useNavigate } from "react-router-dom"
+// import GyanSetuLogo from './Gyan-Setu-Logo.svg';
+// import { ReactComponent as Logo } from './Gyan-Setu-Logo.svg'
 
 export default function LandingPage() {
 	
@@ -18,7 +20,12 @@ export default function LandingPage() {
 
 				{/* header section */}
 				<header>
-					<div>GyaanSetu</div>
+					<div>
+						{/* <Logo width="50" height="50" />  */}
+						{/* <img src={GyanSetuLogo} alt="GyanSetu Logo" width="50" height="50" />  */}
+						Gyaan
+
+					</div>
 					<nav>
 						<Link to="/login">Join us</Link>
 						<Link to="#contact" className="contact">
@@ -30,7 +37,7 @@ export default function LandingPage() {
 				{/* hero section */}
 				<section className="hero">
 					<div className="hero-content">
-						<div classname = "hero-content-h1">
+						<div className = "hero-content-h1">
 						<h1 data-aos="fade">Welcome to</h1>
 						<h1 data-aos="fade">GyaanSetu</h1>
 							</div>

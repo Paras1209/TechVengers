@@ -1,0 +1,137 @@
+/* Basic Styles */
+body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f9f9f9;
+}
+
+.navbar {
+		background-color: #4CAF50;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+}
+
+.navbar ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+}
+
+.navbar ul li {
+		margin-left: 20px;
+}
+
+.navbar ul li a {
+		color: white;
+		text-decoration: none;
+}
+
+/* Filter Section */
+.filter-section {
+		background-color: #fff;
+		padding: 20px;
+		margin: 20px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container {
+		display: flex;
+		justify-content: space-between;
+}
+
+.filter-container select,
+.filter-container button {
+		padding: 10px;
+		margin-right: 10px;
+		font-size: 16px;
+}
+
+.filter-container button {
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		cursor: pointer;
+}
+
+.filter-container button:hover {
+		background-color: #388E3C;
+}
+
+/* Events Section */
+.events-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+		padding: 20px;
+}
+
+.event-card {
+		background-color: white;
+		padding: 20px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+}
+
+.event-card h3 {
+		margin-top: 0;
+		color: #333;
+}
+
+.event-card p {
+		color: #555;
+}
+
+.register-btn,
+.summary-btn {
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		padding: 10px;
+		cursor: pointer;
+		margin-top: 10px;
+		border-radius: 4px;
+}
+
+.register-btn:hover,
+.summary-btn:hover {
+		background-color: #388E3C;
+}
+
+/* Modal */
+.modal {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		z-index: 1000;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+		background-color: white;
+		padding: 20px;
+		border-radius: 8px;
+		width: 50%;
+}
+
+.close-btn {
+		float: right;
+		font-size: 24px;
+		cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+		.events-section {
+				grid-template-columns: 1fr;
+		}
+}

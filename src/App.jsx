@@ -7,6 +7,7 @@ import RegistrationForm from "./RegistrationForm.jsx";
 import ForumPage from "./ForumPage.jsx";
 import WebinarLayout from "./WebinarLayout.jsx"
 import ChatLayout from "./ChatLayout.jsx";
+import EventsPage from "./EventsPage.jsx";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/forum" element={<ForumPage />} />
         <Route path="/chat" element={<ChatLayout />} />
         <Route path="/webinar" element={<WebinarLayout />} />
+        <Route path="/events" element={<EventsPage />} />
 
           {/* <Route path="" element={} /> */}
             {/* // <Route path="" element={} /> */}
