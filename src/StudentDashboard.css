@@ -6,6 +6,21 @@ body {
   background-color: #e8f5e9;
 }
 
+.showChatBot {
+  background-color: black;
+  height: 400px;
+  width: 300px;
+  right: 0;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  position: fixed;
+  flex-direction: column;
+}
+
 .chatbot-button {
   right: 0;
   position: relative;
@@ -27,21 +42,84 @@ body {
   position: fixed;
 }
 
-.showChatBot {
-  background-color: burlywood;
-  height: 400px;
-  width: 300px;
-  right: 0;
-  border: none;
-  border-radius: 10px;
-  margin-right: 10px;
+.center {
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 80%;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 90%;
+  display: flex;
+  gap: 15px;
+
+  &.own {
+    align-self: flex-end;
+
+    .texts {
+      background-color: rgb(83, 160, 237);
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+
+  .texts {
+    background-color: grey;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+}
+
+.chatbot-bottom {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.textinput {
+  padding: 10px;
+  flex: 1;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.emojiimg {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.emoji {
+  position: relative;
+}
+
+.picker {
   position: absolute;
-  bottom: 100px;
-  position: fixed;
+  right: 40px;
+  bottom: 50px;
 }
 .showpr {
-  background-color: burlywood;
+  background-color: lightblue;
   height: 400px;
   width: 300px;
   right: 0;
@@ -85,9 +163,9 @@ a:hover {
   padding: 10px 20px;
   z-index: 1;
   position: relative;
-  margin:0rem 1rem;
-  height:5rem;
-  width:100vw;
+  margin: 0rem 1rem;
+  height: 5rem;
+  width: 100vw;
 }
 
 .logo {
@@ -108,7 +186,9 @@ a:hover {
   color: #4caf50;
   margin-left: 15px;
 }
-
+.picture {
+  border-radius: 50%;
+}
 .profile-picture img {
   width: 40px;
   height: 40px;
@@ -190,7 +270,11 @@ a:hover {
   /* margin-bottom: 10px; */
   height: fit-content;
 }
+.gbh span{
+  font-size: 15px;
+  font-weight: bold;
 
+}
 .grid-container {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -235,8 +319,8 @@ main .grid-container .hori-grid {
 
 .svg-cont {
   display: flex;
-  /* justify-content: center; /* Center the image horizontally */
-  /* align-items: center; /* Center the image vertically */ */ */
+  /* justify-content: center;  Center the image horizontally */
+  /* align-items: center;  Center the image vertically */
 }
 
 .svg {
