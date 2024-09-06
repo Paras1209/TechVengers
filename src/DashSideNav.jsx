@@ -13,7 +13,8 @@ import {
 	faLocationArrow,
 	faPager,
 	faVideoCamera,
-	faHouse// Added import
+	faHouse,// Added import
+    faVideoSlash
 } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 import RatingComponent from "./Ratingcomponents";
@@ -84,6 +85,17 @@ export default function DashSideNav() {
 					<FontAwesomeIcon icon={faVideo} />
 					<span className="tooltip-text">Webinar</span>
 				</div>
+
+				<div
+					className="icon-tooltip"
+					onClick={() => {
+						navigate("/webinar");
+					}}
+				>
+					<FontAwesomeIcon icon={faVideoSlash} />
+					<span className="tooltip-text">Video Call</span>
+				</div>
+				
 				<div
 					className="icon-tooltip"
 					onClick={() => {

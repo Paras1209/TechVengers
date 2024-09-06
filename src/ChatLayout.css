@@ -166,13 +166,17 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
-
+.call-icons{
+  display:flex;
+  
+}
 .call-icons .material-icons {
   font-size: 24px;
   cursor: pointer;
   margin-left: 10px;
   color: #888888;
   transition: color 0.3s ease;
+
 }
 
 .call-icons .material-icons:hover {
