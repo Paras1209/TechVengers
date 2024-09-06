@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './EventsPage.css'; // Ensure this CSS file is correctly linked
 import DashSideNav from './DashSideNav';
+import DashHeader from './DashHeader';
 
 const EventsPage = () => {
 	// State management for modal and summary text
@@ -44,14 +45,15 @@ const EventsPage = () => {
 	return (
 		<div>
 			{/* Top Navigation Bar */}
-			<nav className="navbar">
-				<div className="logo">Event Platform</div>
+			<nav className="">
+				{/* <div className="logo">Event Platform</div>
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Events</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
-				</ul>
+				</ul> */}
+				<DashHeader />
 			</nav>
 
 			{/* side nav bar */}
