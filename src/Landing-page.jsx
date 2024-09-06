@@ -40,9 +40,9 @@ export default function LandingPage() {
             
             </div>
 
-            <div className="center-content"> 
-              <h6>Building Connections, Creating Futures</h6>
-             <h6> Connecting alumni and students for lifelong learning, mentorship, and success.</h6>
+            <div className=""> 
+              <h5>Building Connections, Creating Futures</h5>
+             <h5> Connecting alumni and students for lifelong learning, mentorship, and success.</h5>
 
 
             </div>
