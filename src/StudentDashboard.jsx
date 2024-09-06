@@ -180,7 +180,7 @@ const StudentDashboard = () => {
                 <h3>Recommended Events</h3>
                 <ul>
                   <li>
-                    <strong>Advanced Data Analytics Workshop</strong>
+                    <strong>Data Analytics Workshop</strong>
                     <button>Register</button>
                   </li>
                   <li>
@@ -214,7 +214,7 @@ const StudentDashboard = () => {
                 <div className="carousel-item">
                   <img src="https://via.placeholder.com/150" alt="Alumni" />
                   <p>
-                    <strong>Pushpit</strong>: <br /> CTO at ABC Ltd.
+                    <strong>Pushpit jain</strong>: <br /> CTO at ABC Ltd.
                   </p>
                 </div>
               </div>
