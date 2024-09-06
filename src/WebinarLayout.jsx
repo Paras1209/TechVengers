@@ -1,14 +1,17 @@
 import React from 'react';
 import './WebinarLayout.css'; // Import the CSS file
 import DashSideNav from './DashSideNav';
+import DashHeader from "./DashHeader";
+
 
 const WebinarLayout = () => {
 	return (
 		<div className="webinar-layout">
+			<DashHeader />
 			{/* Webinar Info Header Bar */}
-			<div className="webinar-header-bar">
+			{/* <div className="webinar-header-bar">
 				Webinar Title - Time Remaining: 45 mins
-			</div>
+			</div> */}
 
 			{/* side nav bar */}
 			<DashSideNav />
@@ -69,7 +72,7 @@ const WebinarLayout = () => {
 			</div>
 
 			{/* Control Bar */}
-			<div className="webinar-control-bar">
+			{/* <div className="webinar-control-bar">
 				<span className="material-icons" title="Mute/Unmute Microphone">
 					mic
 				</span>
@@ -85,7 +88,7 @@ const WebinarLayout = () => {
 				<span className="material-icons" title="Settings">
 					settings
 				</span>
-			</div>
+			</div> */}
 		</div>
 	);
 };

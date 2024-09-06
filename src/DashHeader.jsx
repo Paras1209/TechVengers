@@ -46,7 +46,7 @@ export default function DashHeader() {
             className="profile-picture "
             onClick={() => setshowprofile((prev) => !prev)}
           >
-            <img src="https://via.placeholder.com/40" alt="Profile" />
+            <img src="src/profile1.png" alt="Profile" />
           </div>
           {showprofile ? (
             <div ref={profileRef} className="showpr">
