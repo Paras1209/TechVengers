@@ -81,10 +81,10 @@ export default function LandingPage() {
         </section>
 
         {/* key features */}
-        <section className="features">
+        {/* <section className="features">
           <h2 data-aos="fade-down">Key Features of GyaanSetu</h2>
           <div className="features-grid"></div>
-        </section>
+        </section> */}
 
         {/* success stories */}
         <section className="success-stories">

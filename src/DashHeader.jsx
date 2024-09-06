@@ -51,7 +51,7 @@ export default function DashHeader() {
           {showprofile ? (
             <div ref={profileRef} className="showpr">
               <div className="fgh">Your Profile</div>
-              <img className="picture" src="https://via.placeholder.com/150" />
+              <img className="picture" src="src/profile1.png" />
               <div className="gbh">
                 <span>Name: TechVenger</span>
               </div>

@@ -188,6 +188,8 @@ a:hover {
 }
 .picture {
   border-radius: 50%;
+  width:150px;
+  height:150px;
 }
 .profile-picture img {
   width: 40px;
