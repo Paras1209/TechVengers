@@ -268,9 +268,9 @@ a:hover {
 
 .event-horizontal {
   display: flex;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 20px;
   /* margin-bottom: 10px; */
   height: fit-content;
@@ -285,7 +285,8 @@ a:hover {
 .rewap {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 27px;
 }
 
 main .grid-container .hori-grid {
@@ -305,12 +306,13 @@ main .grid-container .hori-grid {
   padding: 10px;
 }
 .card2 {
-  height: 30vh;
-  width: 45vh;
+  width: 30vw;
   margin-right: auto;
+  height: 35vh;
 }
 .card2A {
-  width: 65vh;
+  width: 30vw;
+  height: 35vh;
 }
 
 .card h3 {
